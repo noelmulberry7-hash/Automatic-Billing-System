@@ -1,0 +1,138 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class BillingSystem {
+
+    static int grandTotal = 0;
+
+    public static void main(String[] args) {
+
+        JFrame frame = new JFrame("Automatic Billing System");
+        frame.setSize(550, 450);
+        frame.setLayout(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Item Label
+        JLabel itemLabel = new JLabel("Select Item:");
+        itemLabel.setBounds(30, 30, 100, 25);
+        frame.add(itemLabel);
+
+        // Item Dropdown
+        String[] items = {"Rice", "Sugar", "Milk"};
+        JComboBox<String> itemBox = new JComboBox<>(items);
+        itemBox.setBounds(140, 30, 150, 25);
+        frame.add(itemBox);
+
+        // Quantity Label
+        JLabel qtyLabel = new JLabel("Quantity:");
+        qtyLabel.setBounds(30, 70, 100, 25);
+        frame.add(qtyLabel);
+
+        // Quantity Field
+        JTextField qtyField = new JTextField();
+        qtyField.setBounds(140, 70, 150, 25);
+        frame.add(qtyField);
+
+        // Add Button
+        JButton addBtn = new JButton("Add Item");
+        addBtn.setBounds(140, 110, 150, 30);
+        frame.add(addBtn);
+
+        // Bill Area
+        JTextArea billArea = new JTextArea();
+        billArea.setBounds(30, 160, 480, 150);
+        billArea.setEditable(false);
+        billArea.setText("Item\tQty\tPrice\tTotal\n");
+        frame.add(billArea);
+
+        // Grand Total Label
+        JLabel totalLabel = new JLabel("Grand Total:");
+        totalLabel.setBounds(30, 330, 100, 25);
+        frame.add(totalLabel);
+
+        JTextField totalField = new JTextField("0");
+        totalField.setBounds(140, 330, 150, 25);
+        totalField.setEditable(false);
+        frame.add(totalField);
+
+        // Generate Bill Button
+        JButton billBtn = new JButton("Generate Bill");
+        billBtn.setBounds(300, 110, 150, 30);
+        frame.add(billBtn);
+
+        // Clear Button
+        JButton clearBtn = new JButton("Clear");
+        clearBtn.setBounds(330, 330, 100, 30);
+        frame.add(clearBtn);
+
+        // COMMON ADD ITEM LOGIC (used by button + Enter key)
+        ActionListener addItemLogic = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                if (qtyField.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(frame, "Please enter quantity");
+                    return;
+                }
+
+                String item = (String) itemBox.getSelectedItem();
+                int qty;
+
+                try {
+                    qty = Integer.parseInt(qtyField.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(frame, "Enter valid number");
+                    return;
+                }
+
+                int price = 0;
+                if (item.equals("Rice")) price = 60;
+                else if (item.equals("Sugar")) price = 45;
+                else if (item.equals("Milk")) price = 30;
+
+                int total = price * qty;
+                grandTotal += total;
+
+                billArea.append(item + "\t" + qty + "\t" + price + "\t" + total + "\n");
+                totalField.setText(String.valueOf(grandTotal));
+
+                qtyField.setText("");
+            }
+        };
+
+        // Add button click
+        addBtn.addActionListener(addItemLogic);
+
+        // ENTER key in quantity field
+        qtyField.addActionListener(addItemLogic);
+
+        // Generate Bill Logic
+        billBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                if (grandTotal == 0) {
+                    JOptionPane.showMessageDialog(frame, "No items added!");
+                    return;
+                }
+
+                JOptionPane.showMessageDialog(
+                        frame,
+                        "Total Bill Amount: Rs. " + grandTotal + "\n\nThank you for shopping!",
+                        "Bill Generated",
+                        JOptionPane.INFORMATION_MESSAGE
+                );
+            }
+        });
+
+        // Clear Logic
+        clearBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                billArea.setText("Item\tQty\tPrice\tTotal\n");
+                totalField.setText("0");
+                qtyField.setText("");
+                grandTotal = 0;
+            }
+        });
+
+        frame.setVisible(true);
+    }
+}
