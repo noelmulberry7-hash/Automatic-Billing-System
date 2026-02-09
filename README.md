@@ -25,8 +25,8 @@ Automatic Billing System is a Java Swing–based desktop application that automa
 4. The billing window will open
 
 ## 📸 Screenshot
-![img1](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/screenshot.png.png)
-![img1](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/Screenshot%202026-02-09%20152527.png)
+![img1](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/additems.png)
+![img2](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/billgen.png)
 
 
 ## 🎓 Academic Note
