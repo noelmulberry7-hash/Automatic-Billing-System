@@ -1,79 +1,74 @@
-Automatic Billing System (Java + SQLite)
+# Automatic Billing System (Java + SQLite)
 
 A desktop-based billing system developed using Java Swing and SQLite (JDBC).
 The application allows users to add items, generate bills, and store billing records in a database for future reference.
 
-Features
+---
 
-Add items with quantity
+## Features
 
-Automatic price calculation
+- Add items with quantity
+- Automatic price calculation
+- Grand total generation
+- Customer name support
+- Save bills to SQLite database
+- View previously saved bills
+- Clean and structured GUI
+- Real-time clock display
 
-Grand total generation
+---
 
-Customer name support
+## Technologies Used
 
-Save bills to SQLite database
+- Java (Core + OOP concepts)
+- Java Swing (GUI)
+- JDBC
+- SQLite Database
+- VS Code
 
-View previously saved bills
+---
 
-Clean and structured GUI
+## Project Structure
 
-Real-time clock display
+BillingSystem.java  
+DBConnection.java  
+billing.db (auto-created)  
+sqlite-jdbc.jar  
 
-Technologies Used
+---
 
-Java (Core + OOP concepts)
+## How to Run
 
-Java Swing (GUI)
+1. Install Java (JDK 8 or above).
+2. Add the SQLite JDBC `.jar` file to your project libraries.
+3. Compile and run `BillingSystem.java`.
+4. The database file (`billing.db`) will be created automatically on first run.
 
-JDBC
+---
 
-SQLite Database
+## Database Details
 
-VS Code
+The system creates a table named `bills` with the following fields:
 
-Project Structure
-BillingSystem.java
-DBConnection.java
-billing.db (auto-created)
-sqlite-jdbc.jar
+- id (Primary Key, Auto Increment)
+- customer_name
+- total_amount
 
-How to Run
+---
 
-Install Java (JDK 8 or above).
-
-Add the SQLite JDBC .jar file to your project libraries.
-
-Compile and run BillingSystem.java.
-
-The database file (billing.db) will be created automatically on first run.
-
-Database Details
-
-The system creates a table named bills with the following fields:
-
-id (Primary Key, Auto Increment)
-
-customer_name
-
-total_amount
-
-Academic Purpose
+## Academic Purpose
 
 This project was developed as part of BCA coursework to demonstrate:
 
-GUI development using Swing
+- GUI development using Swing  
+- Database connectivity using JDBC  
+- Event handling  
+- Multithreading  
+- Data persistence  
 
-Database connectivity using JDBC
+---
 
-Event handling
+## Author
 
-Multithreading
-
-Data persistence
-
-Author
-
-Noel Biju
-Anwin Gitto
+Noel Biju  
+BCA Student
