@@ -70,7 +70,7 @@ This project was developed as part of BCA coursework to demonstrate:
 ## Screenshots
 
 ### Main Interface
-![Main Interface](Screenshot 2026-02-12 224030.png)
+![Main Interface](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224138.png)
 
 ![Adding Items](Screenshot 2026-02-12 224138.png)
 
