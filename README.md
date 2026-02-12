@@ -1,33 +1,79 @@
-# Automatic Billing System (Java Swing)
+Automatic Billing System (Java + SQLite)
 
-## 📌 Description
-Automatic Billing System is a Java Swing–based desktop application that automates shop billing. Item prices are predefined, users enter quantities, and the system automatically calculates item-wise totals and generates the final bill using a simple GUI.
+A desktop-based billing system developed using Java Swing and SQLite (JDBC).
+The application allows users to add items, generate bills, and store billing records in a database for future reference.
 
-## ⚙️ Features
-- Predefined item prices
-- Item selection using dropdown
-- Quantity input with Enter key support
-- Automatic bill calculation
-- Bill preview with total amount
-- Generate bill popup with thank you message
-- Clear/reset bill option
-- Resizable window using layout managers
+Features
 
-## 🛠️ Technologies Used
-- Java (JDK 8 / 11)
-- Java Swing & AWT
-- VS Code
+Add items with quantity
 
-## ▶️ How to Run
-1. Install Java JDK
-2. Open the project in VS Code
-3. Run `BillingSystem.java`
-4. The billing window will open
+Automatic price calculation
 
-## 📸 Screenshot
-![img1](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/additems.png)
-![img2](https://github.com/noelmulberry7-hash/Automatic-Billing-System/blob/main/billgen.png)
-https://github.com/user-attachments/assets/7e2bffc6-88f1-4b17-9dd0-4e7501b481f9
+Grand total generation
 
-## 🎓 Academic Note
-This project was developed as part of a Java programming academic assignment to demonstrate GUI development and event-driven programming using Swing.
+Customer name support
+
+Save bills to SQLite database
+
+View previously saved bills
+
+Clean and structured GUI
+
+Real-time clock display
+
+Technologies Used
+
+Java (Core + OOP concepts)
+
+Java Swing (GUI)
+
+JDBC
+
+SQLite Database
+
+VS Code
+
+Project Structure
+BillingSystem.java
+DBConnection.java
+billing.db (auto-created)
+sqlite-jdbc.jar
+
+How to Run
+
+Install Java (JDK 8 or above).
+
+Add the SQLite JDBC .jar file to your project libraries.
+
+Compile and run BillingSystem.java.
+
+The database file (billing.db) will be created automatically on first run.
+
+Database Details
+
+The system creates a table named bills with the following fields:
+
+id (Primary Key, Auto Increment)
+
+customer_name
+
+total_amount
+
+Academic Purpose
+
+This project was developed as part of BCA coursework to demonstrate:
+
+GUI development using Swing
+
+Database connectivity using JDBC
+
+Event handling
+
+Multithreading
+
+Data persistence
+
+Author
+
+Noel Biju
+Anwin Gitto
