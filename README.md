@@ -70,18 +70,19 @@ This project was developed as part of BCA coursework to demonstrate:
 ## Screenshots
 
 ### Main Interface
-![Main Interface](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224138.png)
-
-![Adding Items](Screenshot 2026-02-12 224138.png)
+![Main Interface](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224030.png)
 
 ### Generated Bill
-![Generated Bill](Screenshot 2026-02-12 224232.png)
+![Generated Bill](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224138.png)
+
+### Saved Bills
+![Generated Bill](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224232.png)
 
 ### Database View
-![Database View](Screenshot 2026-02-12 224302.png)
+![Database View](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224302.png)
 
 
-## Author
+## Authors
 
 Noel Biju  
 Anwin Gitto
