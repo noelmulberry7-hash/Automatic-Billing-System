@@ -71,4 +71,4 @@ This project was developed as part of BCA coursework to demonstrate:
 ## Author
 
 Noel Biju  
-BCA Student
+Anwin Gitto
