@@ -67,6 +67,19 @@ This project was developed as part of BCA coursework to demonstrate:
 - Data persistence  
 
 ---
+## Screenshots
+
+### Main Interface
+![Main Interface](screenshot1.png)
+
+![Adding Items](screenshot2.png)
+
+### Generated Bill
+![Generated Bill](output.png)
+
+### Database View
+![Database View](db_view.png)
+
 
 ## Author
 
