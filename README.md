@@ -81,7 +81,11 @@ This project was developed as part of BCA coursework to demonstrate:
 ### Database View
 ![Database View](https://raw.githubusercontent.com/noelmulberry7-hash/Automatic-Billing-System/refs/heads/main/Screenshot%202026-02-12%20224302.png)
 
+## Demo Video
 
+[Click here to watch the demo](https://youtu.be/4HNBNMrg7Fo)
+
+-------------------------------------------------------
 ## Authors
 
 Noel Biju  
