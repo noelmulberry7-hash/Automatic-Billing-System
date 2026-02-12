@@ -70,15 +70,15 @@ This project was developed as part of BCA coursework to demonstrate:
 ## Screenshots
 
 ### Main Interface
-![Main Interface](screenshot1.png)
+![Main Interface](Screenshot 2026-02-12 224030.png)
 
-![Adding Items](screenshot2.png)
+![Adding Items](Screenshot 2026-02-12 224138.png)
 
 ### Generated Bill
-![Generated Bill](output.png)
+![Generated Bill](Screenshot 2026-02-12 224232.png)
 
 ### Database View
-![Database View](db_view.png)
+![Database View](Screenshot 2026-02-12 224302.png)
 
 
 ## Author
